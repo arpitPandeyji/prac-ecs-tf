@@ -1,7 +1,15 @@
- # syntax=docker/dockerfile:1
- FROM --platform=linux/amd64 node:12-alpine
- WORKDIR /app
- COPY . .
- RUN yarn install --production
- EXPOSE 3000
- CMD ["node", "index.js"]
+FROM node:16-alpine
+
+ENV PORT=3000
+
+WORKDIR /usr/src/app
+
+# Install dependencies
+COPY package.json /usr/src/app/
+RUN npm install
+
+# Copy source
+COPY index.js /usr/src/app
+
+EXPOSE $PORT
+CMD [ "npm", "start" ]
