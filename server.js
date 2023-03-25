@@ -7,7 +7,7 @@ app.set("port", process.env.PORT || 80);
 
 app.get('/', function (req, res) {
    res.writeHead(200, {'Content-Type': 'application/json'});
-   var response = { "response" : "Hi, This isGET method." }
+   var response = { "response" : "Hi, This isGET method.g" }
    console.log(response);
    res.end(JSON.stringify(response));
 })
