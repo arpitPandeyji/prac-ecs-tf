@@ -72,8 +72,8 @@ variable "aws_ecr_repository" {
 
 variable "aws_ecs_task_def_fam" {
   type        = string
-  description = "demo_ecs_fam-1"
-  default     = "demo_ecs_fam-1"
+  description = "demo_ecs_fam"
+  default     = "demo_ecs_fam"
 }
 
 variable "fargate_cpu" {
@@ -91,7 +91,7 @@ variable "fargate_memory" {
 variable "aws_ecs_service_name" {
   type        = string
   description = "service name"
-  default     = "demo_ecs_svc-1"
+  default     = "demo_ecs_svc"
 }
 
 variable "app_port" {
