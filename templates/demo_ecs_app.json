@@ -5,7 +5,7 @@
   "family": "demo_ecs_fam",
   "containerDefinitions": [
       {
-          "name": "demo_ecs_app",
+          "name": "demo_ecs_app1",
           "image": "801019333925.dkr.ecr.ap-south-1.amazonaws.com/demo_ecs_app:latest",
           "essential": true,
           "cpu": "1024",
