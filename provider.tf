@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "gh-task"
     workspaces {
-      name = "demo-ecs"
+      name = "ecs-fargate"
     }
   }
   required_providers {
