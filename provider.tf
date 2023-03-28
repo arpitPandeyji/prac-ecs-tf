@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "gh-task"
+    organization = "edutf"
     workspaces {
       name = "ecs-fargate-github-1"
     }
